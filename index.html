@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="UNLP Básquet — El Roble. Club de básquetbol de la Universidad Nacional de La Plata. Primera División APDEB. Categorías desde Escuelita hasta Primera División." />
+  <title>UNLP Básquet — El Roble</title>
+
+  <!-- Favicon: ícono del roble -->
+  <link rel="icon" type="image/png" href="img/roble.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ══ HEADER / NAVBAR ══ -->
+  <header>
+    <nav class="navbar" id="navbar" aria-label="Navegación principal">
+      <div class="contenedor">
+        <div class="navbar__inner">
+          <a href="#hero" class="navbar__logo" aria-label="UNLP Básquet — inicio">
+            <img src="img/logo.png" alt="UNLP Deportes" width="160" height="44" />
+          </a>
+          <ul class="navbar__nav" id="nav-menu" role="list">
+            <li><a href="#nosotros"    class="navbar__link">Nosotros</a></li>
+            <li><a href="#categorias"  class="navbar__link">Categorías</a></li>
+            <li><a href="#competencia" class="navbar__link">Competencia</a></li>
+            <li><a href="#staff"       class="navbar__link">Staff</a></li>
+            <li><a href="#galeria"     class="navbar__link">Galería</a></li>
+            <li><a href="#contacto"    class="navbar__link">Contacto</a></li>
+          </ul>
+          <div style="display:flex;align-items:center;gap:0.75rem;">
+            <a href="#inscripcion" class="navbar__cta">Inscribirse</a>
+            <button class="navbar__hamburguesa" id="hamburguesa"
+              aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menú">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ══ HERO ══ -->
+    <section id="hero" aria-label="Presentación del club">
+      <div class="hero__fondo" role="img" aria-label="Jugadores de UNLP Básquet en cancha"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__contenido">
+        <div class="hero__texto">
+          <span class="hero__ojo">Universidad Nacional de La Plata · Básquet</span>
+          <h1 class="hero__titulo">El <span class="roble">Roble</span></h1>
+          <p class="hero__bajada">
+            Básquet universitario en La Plata desde 1998. Primera División de la APDEB —
+            rama masculina y femenina — y nueve categorías formativas abiertas a toda la comunidad.
+          </p>
+          <ul class="hero__badges" role="list">
+            <li class="hero__badge">🏀 Desde 1998</li>
+            <li class="hero__badge">🏆 1ª División APDEB</li>
+            <li class="hero__badge">📍 Calle 50 y 117, La Plata</li>
+            <li class="hero__badge">♀♂ Masculino y Femenino</li>
+          </ul>
+          <div class="hero__ctas">
+            <a href="#inscripcion" class="btn btn--primario">Quiero inscribirme</a>
+            <a href="#nosotros"    class="btn btn--contorno">Conocer el club</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ NOSOTROS ══ -->
+    <section id="nosotros" aria-labelledby="titulo-nosotros">
+      <div class="contenedor">
+        <div class="nosotros__grid">
+          <figure>
+            <img src="img/equipo.jpg"
+              alt="Plantel completo de UNLP Básquet posando en la cancha del Campo de Deportes"
+              class="nosotros__imagen" width="600" height="450" loading="lazy" />
+          </figure>
+          <div class="nosotros__texto">
+            <span class="eyebrow">Nuestra historia</span>
+            <h2 class="titulo-seccion" id="titulo-nosotros">Más de 25 años de básquet universitario</h2>
+            <div class="divisor"></div>
+            <p>UNLP Básquet nació el 1 de febrero de 1998 en el Campo de Deportes de la Universidad Nacional de La Plata. Desde entonces, "El Roble" creció hasta convertirse en uno de los clubes más sólidos del básquetbol platense, compitiendo en la Primera División de la Asociación Platense de Básquetbol (APDEB) tanto en la rama masculina como en la femenina.</p>
+            <p>Más que un equipo, somos una comunidad. Abrimos las puertas a estudiantes universitarios, graduados y a toda la familia platense que quiera hacer del básquet su deporte. Como el roble, crecemos con raíces fuertes y madera que resiste.</p>
+            <dl class="nosotros__stats">
+              <div class="stat">
+                <dt class="stat__label">Años de historia</dt>
+                <dd class="stat__num">+25</dd>
+              </div>
+              <div class="stat">
+                <dt class="stat__label">Categorías activas</dt>
+                <dd class="stat__num">9</dd>
+              </div>
+              <div class="stat">
+                <dt class="stat__label">Ramas competitivas</dt>
+                <dd class="stat__num">2</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CATEGORÍAS ══ -->
+    <section id="categorias" aria-labelledby="titulo-categorias">
+      <div class="contenedor">
+        <div style="text-align:center;">
+          <span class="eyebrow eyebrow--blanco">Estructura del club</span>
+          <h2 class="titulo-seccion titulo-seccion--blanco" id="titulo-categorias">Categorías y horarios</h2>
+          <div class="divisor divisor--centro"></div>
+          <p style="color:rgba(255,255,255,0.65);max-width:560px;margin-inline:auto;font-size:0.95rem;">
+            Todos los entrenamientos en la cancha del Campo de Deportes, Calle 50 y 117, La Plata.
+          </p>
+        </div>
+        <ul class="categorias__grid" role="list" aria-label="Listado de categorías">
+
+          <li class="cat-wrapper">
+            <article class="cat-card">
+              <div class="cat-card__icono" aria-hidden="true">🏆</div>
+              <div class="cat-card__cuerpo">
+                <span class="cat-card__badge">1ª División</span>
+                <h3 class="cat-card__nombre">Primera División</h3>
+                <p class="cat-card__horario"><strong>Lunes a Viernes</strong><br>20:30 – 23:00 hs</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="cat-wrapper">
+            <article class="cat-card">
+              <div class="cat-card__icono" aria-hidden="true">🏀</div>
+              <div class="cat-card__cuerpo">
+                <span class="cat-card__badge">Federado</span>
+                <h3 class="cat-card__nombre">Sub 21</h3>
+                <p class="cat-card__horario"><strong>Martes y Viernes</strong><br>19:30 – 21:00 hs</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="cat-wrapper">
+            <article class="cat-card">
+              <div class="cat-card__icono" aria-hidden="true">🏀</div>
+              <div class="cat-card__cuerpo">
+                <span class="cat-card__badge">Federado</span>
+                <h3 class="cat-card__nombre">Juveniles</h3>
+                <p class="cat-card__horario"><strong>Lunes y Viernes</strong> · 19:30 – 21:15 hs<br><strong>Martes y Miércoles</strong> · 19:00 – 21:15 hs</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="cat-wrapper">
+            <article class="cat-card">
+              <div class="cat-card__icono" aria-hidden="true">🏀</div>
+              <div class="cat-card__cuerpo">
+                <span class="cat-card__badge">Federado</span>
+                <h3 class="cat-card__nombre">Cadetes</h3>
+                <p class="cat-card__horario"><strong>Lunes, Miércoles y Jueves</strong><br>19:30 – 21:15 hs</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="cat-wrapper">
+            <article class="cat-card">
+              <div class="cat-card__icono" aria-hidden="true">⭐</div>
+              <div class="cat-card__cuerpo">
+                <span class="cat-card__badge">Formativo</span>
+                <h3 class="cat-card__nombre">Infantiles</h3>
+                <p class="cat-card__horario"><strong>Lunes y Jueves</strong> · 18:45 – 20:15 hs<br><strong>Miércoles</strong> · 19:30 – 20:15 hs</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="cat-wrapper">
+            <article class="cat-card">
+              <div class="cat-card__icono" aria-hidden="true">⭐</div>
+              <div class="cat-card__cuerpo">
+                <span class="cat-card__badge">Formativo</span>
+                <h3 class="cat-card__nombre">Pre Infantiles</h3>
+                <p class="cat-card__horario"><strong>Lunes</strong> · 18:00 – 19:30 hs<br><strong>Miércoles y Viernes</strong> · 18:00 – 20:00 hs</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="cat-wrapper">
+            <article class="cat-card">
+              <div class="cat-card__icono" aria-hidden="true">🌱</div>
+              <div class="cat-card__cuerpo">
+                <span class="cat-card__badge">Iniciación</span>
+                <h3 class="cat-card__nombre">Mini</h3>
+                <p class="cat-card__horario"><strong>Martes y Jueves</strong><br>18:30 – 20:15 hs</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="cat-wrapper">
+            <article class="cat-card">
+              <div class="cat-card__icono" aria-hidden="true">🌱</div>
+              <div class="cat-card__cuerpo">
+                <span class="cat-card__badge">Iniciación</span>
+                <h3 class="cat-card__nombre">Pre Mini</h3>
+                <p class="cat-card__horario"><strong>Martes y Jueves</strong><br>17:30 – 18:30 hs</p>
+              </div>
+            </article>
+          </li>
+
+          <li class="cat-wrapper">
+            <article class="cat-card">
+              <div class="cat-card__icono" aria-hidden="true">🌱</div>
+              <div class="cat-card__cuerpo">
+                <span class="cat-card__badge">Iniciación</span>
+                <h3 class="cat-card__nombre">Escuelita</h3>
+                <p class="cat-card__horario"><strong>Martes y Jueves</strong><br>17:30 – 18:30 hs</p>
+              </div>
+            </article>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ══ COMPETENCIA ══ -->
+    <section id="competencia" aria-labelledby="titulo-competencia">
+      <div class="contenedor">
+        <span class="eyebrow">APDEB Temporada 2026</span>
+        <h2 class="titulo-seccion" id="titulo-competencia">Competencia</h2>
+        <div class="divisor"></div>
+
+        <!-- Tabs de rama -->
+        <div class="comp-tabs" role="tablist" aria-label="Seleccionar rama">
+          <button class="comp-tab comp-tab--activo" id="tab-masc" role="tab"
+            aria-selected="true" aria-controls="panel-masc">⚡ Masculino</button>
+          <button class="comp-tab" id="tab-fem" role="tab"
+            aria-selected="false" aria-controls="panel-fem">♀ Femenino</button>
+        </div>
+
+        <!-- ── PANEL MASCULINO ── -->
+        <div id="panel-masc" role="tabpanel" aria-labelledby="tab-masc">
+          <div class="comp-meta">
+            <span class="comp-zona">Zona B — Primera División Masculina</span>
+            <a href="https://www.apdeb.com.ar/MAYORES_2026_PRIMERA_FIXTURE.html"
+               target="_blank" rel="noopener noreferrer" class="comp-link-apdeb">
+              Ver fixture completo en APDEB →
+            </a>
+          </div>
+
+          <!-- Posiciones Zona B -->
+          <div class="tabla-posiciones">
+            <h3 class="tabla__titulo">Posiciones — Zona B</h3>
+            <div style="overflow-x:auto;">
+              <table class="tabla" aria-label="Posiciones Zona B masculino">
+                <thead>
+                  <tr>
+                    <th>Pos</th><th>Equipo</th><th>J</th><th>G</th><th>P</th><th>Pts</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>MAYO</td><td>2</td><td>2</td><td>0</td><td>4</td></tr>
+                  <tr><td>2</td><td>DEPORTIVO LP "A"</td><td>2</td><td>2</td><td>0</td><td>4</td></tr>
+                  <tr><td>3</td><td>HOGAR SOCIAL</td><td>2</td><td>1</td><td>1</td><td>3</td></tr>
+                  <tr><td>4</td><td>SAN VICENTE</td><td>2</td><td>1</td><td>1</td><td>3</td></tr>
+                  <tr><td>5</td><td>ATENAS "B"</td><td>2</td><td>1</td><td>1</td><td>3</td></tr>
+                  <tr><td>6</td><td>SUD AMERICA "A"</td><td>2</td><td>1</td><td>1</td><td>3</td></tr>
+                  <tr class="tabla__fila--unlp"><td>7</td><td><strong>U.N.L.P "A"</strong></td><td>2</td><td>1</td><td>1</td><td>3</td></tr>
+                  <tr><td>8</td><td>V.S.C. "A"</td><td>2</td><td>1</td><td>1</td><td>3</td></tr>
+                  <tr><td>9</td><td>C.E.Y.E.</td><td>1</td><td>1</td><td>0</td><td>2</td></tr>
+                  <tr><td>10</td><td>PLATENSE "B"</td><td>2</td><td>0</td><td>2</td><td>2</td></tr>
+                  <tr><td>11</td><td>UNIVERSITARIO</td><td>2</td><td>0</td><td>2</td><td>2</td></tr>
+                  <tr><td>12</td><td>TOLOSANO</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="competencia__grid">
+            <!-- Próximos partidos masculino -->
+            <div>
+              <h3 class="competencia__subtitulo">Próximos partidos</h3>
+              <ol class="partidos-stack" role="list">
+                <li>
+                  <article class="fixture-card">
+                    <div class="fixture-card__fecha" aria-label="16 de julio">
+                      <div class="fixture-card__dia">16</div>
+                      <div class="fixture-card__mes">Jul</div>
+                    </div>
+                    <div class="fixture-card__info">
+                      <div class="fixture-card__rival">PLATENSE "B" vs UNLP "A"</div>
+                      <p class="fixture-card__meta">📍 Cancha de Platense · Fecha 11 · Masc.</p>
+                    </div>
+                    <div class="fixture-card__hora">A confirmar</div>
+                  </article>
+                </li>
+                <li>
+                  <article class="fixture-card">
+                    <div class="fixture-card__fecha" aria-label="4 de agosto">
+                      <div class="fixture-card__dia">04</div>
+                      <div class="fixture-card__mes">Ago</div>
+                    </div>
+                    <div class="fixture-card__info">
+                      <div class="fixture-card__rival">UNLP "A" vs DEPORTIVO LP "A"</div>
+                      <p class="fixture-card__meta">📍 Campo de Deportes UNLP · Fecha 12 · Masc.</p>
+                    </div>
+                    <div class="fixture-card__hora">A confirmar</div>
+                  </article>
+                </li>
+                <li>
+                  <article class="fixture-card">
+                    <div class="fixture-card__fecha" aria-label="11 de agosto">
+                      <div class="fixture-card__dia">11</div>
+                      <div class="fixture-card__mes">Ago</div>
+                    </div>
+                    <div class="fixture-card__info">
+                      <div class="fixture-card__rival">SUD AMERICA "A" vs UNLP "A"</div>
+                      <p class="fixture-card__meta">📍 Cancha de Sud América · Fecha 13 · Masc.</p>
+                    </div>
+                    <div class="fixture-card__hora">A confirmar</div>
+                  </article>
+                </li>
+              </ol>
+            </div>
+
+            <!-- Últimos resultados masculino -->
+            <div>
+              <h3 class="competencia__subtitulo">Últimos resultados</h3>
+              <ol class="partidos-stack" role="list">
+                <li>
+                  <article class="resultado-card">
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">UNLP "A"</div>
+                      <span class="resultado-card__tag resultado-card__tag--victoria">Local</span>
+                    </div>
+                    <div>
+                      <div class="resultado-card__marcador">69 – 59</div>
+                      <div class="resultado-card__fecha">14/05 · Fecha 2</div>
+                    </div>
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">Sud América "A"</div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="resultado-card">
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">Deportivo LP</div>
+                      <span class="resultado-card__tag resultado-card__tag--derrota">Local</span>
+                    </div>
+                    <div>
+                      <div class="resultado-card__marcador">72 – 58</div>
+                      <div class="resultado-card__fecha">07/05 · Fecha 1</div>
+                    </div>
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">UNLP "A"</div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="resultado-card">
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">UNLP "A"</div>
+                      <span class="resultado-card__tag resultado-card__tag--victoria">Local</span>
+                    </div>
+                    <div>
+                      <div class="resultado-card__marcador">72 – 68</div>
+                      <div class="resultado-card__fecha">Amistoso · vs Sud América</div>
+                    </div>
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">Sud América</div>
+                    </div>
+                  </article>
+                </li>
+              </ol>
+              <p class="competencia__nota">
+                Resultados y posiciones oficiales:
+                <a href="https://www.apdeb.com.ar/MAYORES%20RESULTADOS.html" target="_blank" rel="noopener">apdeb.com.ar</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── PANEL FEMENINO ── -->
+        <div id="panel-fem" role="tabpanel" aria-labelledby="tab-fem" hidden>
+          <div class="comp-meta">
+            <span class="comp-zona">Primera División Femenina</span>
+            <a href="https://www.apdeb.com.ar/FEMENINO_2026_MAYORES_FIXTURE.html"
+               target="_blank" rel="noopener noreferrer" class="comp-link-apdeb">
+              Ver fixture completo en APDEB →
+            </a>
+          </div>
+
+          <!-- Posiciones Femenino -->
+          <div class="tabla-posiciones">
+            <h3 class="tabla__titulo">Posiciones — Primera División Femenina</h3>
+            <div style="overflow-x:auto;">
+              <table class="tabla" aria-label="Posiciones Primera División Femenina">
+                <thead>
+                  <tr><th>Pos</th><th>Equipo</th><th>J</th><th>G</th><th>P</th><th>Pts</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>HOGAR SOCIAL</td><td>9</td><td>9</td><td>0</td><td>18</td></tr>
+                  <tr><td>2</td><td>RECONQUISTA</td><td>9</td><td>7</td><td>2</td><td>16</td></tr>
+                  <tr><td>3</td><td>PLATENSE</td><td>9</td><td>7</td><td>2</td><td>16</td></tr>
+                  <tr><td>4</td><td>JUVENTUD</td><td>9</td><td>6</td><td>3</td><td>15</td></tr>
+                  <tr><td>5</td><td>SAN VICENTE</td><td>9</td><td>6</td><td>3</td><td>15</td></tr>
+                  <tr><td>6</td><td>V.S.CARLOS</td><td>9</td><td>4</td><td>5</td><td>13</td></tr>
+                  <tr class="tabla__fila--unlp"><td>7</td><td><strong>U.N.L.P</strong></td><td>9</td><td>3</td><td>6</td><td>12</td></tr>
+                  <tr><td>8</td><td>MERIDIANO V</td><td>9</td><td>2</td><td>7</td><td>11</td></tr>
+                  <tr><td>9</td><td>BCO PROVINCIA</td><td>9</td><td>1</td><td>8</td><td>10</td></tr>
+                  <tr><td>10</td><td>ESTRELLA</td><td>9</td><td>0</td><td>9</td><td>9</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="competencia__grid">
+            <!-- Próximos partidos femenino -->
+            <div>
+              <h3 class="competencia__subtitulo">Próximos partidos</h3>
+              <ol class="partidos-stack" role="list">
+                <li>
+                  <article class="fixture-card">
+                    <div class="fixture-card__fecha" aria-label="8 de agosto">
+                      <div class="fixture-card__dia">08</div>
+                      <div class="fixture-card__mes">Ago</div>
+                    </div>
+                    <div class="fixture-card__info">
+                      <div class="fixture-card__rival">HOGAR SOCIAL vs UNLP</div>
+                      <p class="fixture-card__meta">📍 Cancha de Hogar Social · Fecha 10 · Fem.</p>
+                    </div>
+                    <div class="fixture-card__hora">A confirmar</div>
+                  </article>
+                </li>
+                <li>
+                  <article class="fixture-card">
+                    <div class="fixture-card__fecha" aria-label="22 de agosto">
+                      <div class="fixture-card__dia">22</div>
+                      <div class="fixture-card__mes">Ago</div>
+                    </div>
+                    <div class="fixture-card__info">
+                      <div class="fixture-card__rival">UNLP vs RECONQUISTA</div>
+                      <p class="fixture-card__meta">📍 Campo de Deportes UNLP · Fecha 11 · Fem.</p>
+                    </div>
+                    <div class="fixture-card__hora">A confirmar</div>
+                  </article>
+                </li>
+                <li>
+                  <article class="fixture-card">
+                    <div class="fixture-card__fecha" aria-label="29 de agosto">
+                      <div class="fixture-card__dia">29</div>
+                      <div class="fixture-card__mes">Ago</div>
+                    </div>
+                    <div class="fixture-card__info">
+                      <div class="fixture-card__rival">JUVENTUD vs UNLP</div>
+                      <p class="fixture-card__meta">📍 Cancha de Juventud · Fecha 12 · Fem.</p>
+                    </div>
+                    <div class="fixture-card__hora">A confirmar</div>
+                  </article>
+                </li>
+              </ol>
+            </div>
+
+            <!-- Últimos resultados femenino -->
+            <div>
+              <h3 class="competencia__subtitulo">Últimos resultados</h3>
+              <ol class="partidos-stack" role="list">
+                <li>
+                  <article class="resultado-card">
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">UNLP</div>
+                      <span class="resultado-card__tag resultado-card__tag--victoria">Local</span>
+                    </div>
+                    <div>
+                      <div class="resultado-card__marcador">39 – 32</div>
+                      <div class="resultado-card__fecha">15/07 · Fecha 9</div>
+                    </div>
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">Bco Provincia</div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="resultado-card">
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">Platense</div>
+                      <span class="resultado-card__tag resultado-card__tag--derrota">Local</span>
+                    </div>
+                    <div>
+                      <div class="resultado-card__marcador">61 – 35</div>
+                      <div class="resultado-card__fecha">04/07 · Fecha 8</div>
+                    </div>
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">UNLP</div>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="resultado-card">
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">UNLP</div>
+                      <span class="resultado-card__tag resultado-card__tag--victoria">Local</span>
+                    </div>
+                    <div>
+                      <div class="resultado-card__marcador">49 – 30</div>
+                      <div class="resultado-card__fecha">27/06 · Fecha 7</div>
+                    </div>
+                    <div class="resultado-card__equipo">
+                      <div class="resultado-card__nombre">Estrella</div>
+                    </div>
+                  </article>
+                </li>
+              </ol>
+              <p class="competencia__nota">
+                Resultados y posiciones oficiales:
+                <a href="https://www.apdeb.com.ar/FEMENINO_RESULTADOS.html" target="_blank" rel="noopener">apdeb.com.ar</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══ STAFF ══ -->
+    <section id="staff" aria-labelledby="titulo-staff">
+      <div class="contenedor">
+        <div class="staff__grid">
+          <div>
+            <span class="eyebrow">Cuerpo técnico</span>
+            <h2 class="titulo-seccion" id="titulo-staff">El equipo detrás del equipo</h2>
+            <div class="divisor"></div>
+            <ul class="staff__lista" role="list">
+              <li class="staff-item">
+                <div class="staff-item__icono staff-item__icono--azul" aria-hidden="true">🏀</div>
+                <div>
+                  <h3 class="staff-item__nombre">Javier Perazzo</h3>
+                  <p class="staff-item__rol">Entrenador Principal</p>
+                  <p class="staff-item__desc">
+                    Director técnico del plantel mayor de UNLP Básquet. Referente del básquet universitario platense, conduce la estrategia competitiva del club en la Primera División de la APDEB.
+                  </p>
+                </div>
+              </li>
+              <li class="staff-item">
+                <div class="staff-item__icono staff-item__icono--verde" aria-hidden="true">💪</div>
+                <div>
+                  <h3 class="staff-item__nombre">Tobías Ávila</h3>
+                  <p class="staff-item__rol">Preparador Físico</p>
+                  <p class="staff-item__desc">
+                    Responsable de la preparación física de los planteles, diseñando los programas de entrenamiento y recuperación para maximizar el rendimiento deportivo.
+                  </p>
+                </div>
+              </li>
+              <li class="staff-item">
+                <div class="staff-item__icono staff-item__icono--azul" aria-hidden="true">📋</div>
+                <div>
+                  <h3 class="staff-item__nombre">Cuerpo Técnico Formativo</h3>
+                  <p class="staff-item__rol">Ayudantes y Entrenadores de Categorías</p>
+                  <p class="staff-item__desc">
+                    El staff de categorías formativas y juveniles acompaña el desarrollo de cada jugador desde la Escuelita hasta las categorías Sub 21, con foco en la formación integral y los valores del deporte universitario.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <figure>
+            <img src="img/staff2.jpg"
+              alt="Javier Perazzo (entrenador principal) y Tobías Ávila (preparador físico) de UNLP Básquet"
+              class="staff__imagen" width="600" height="375" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ GALERÍA ══ -->
+    <section id="galeria" aria-labelledby="titulo-galeria">
+      <div class="contenedor">
+        <div style="text-align:center;">
+          <span class="eyebrow">Fotos del club</span>
+          <h2 class="titulo-seccion titulo-seccion--blanco" id="titulo-galeria">Galería</h2>
+          <div class="divisor divisor--centro"></div>
+        </div>
+
+        <div class="galeria__grid" role="list" aria-label="Galería fotográfica">
+          <figure class="galeria__item galeria__item--grande" role="listitem">
+            <img src="img/accion1.jpg" alt="Jugador número 9 de UNLP Básquet corriendo en cancha" loading="lazy" />
+            <div class="galeria__overlay" aria-hidden="true">🏀</div>
+          </figure>
+          <figure class="galeria__item" role="listitem">
+            <img src="img/accion2.jpg" alt="Jugador número 5 de UNLP en tiro libre" loading="lazy" />
+            <div class="galeria__overlay" aria-hidden="true">📸</div>
+          </figure>
+          <figure class="galeria__item" role="listitem">
+            <img src="img/equipo.jpg" alt="Plantel completo de UNLP Básquet" loading="lazy" />
+            <div class="galeria__overlay" aria-hidden="true">📸</div>
+          </figure>
+          <figure class="galeria__item" role="listitem">
+            <img src="img/femenino.jpg" alt="Flyer Primera Femenina UNLP vs Villa San Carlos" loading="lazy" />
+            <div class="galeria__overlay" aria-hidden="true">♀</div>
+          </figure>
+          <figure class="galeria__item" role="listitem">
+            <img src="img/camiseta.jpg" alt="Camiseta oficial de UNLP Básquet con sponsor ALZ Arquitectura" loading="lazy" />
+            <div class="galeria__overlay" aria-hidden="true">👕</div>
+          </figure>
+          <figure class="galeria__item" role="listitem">
+            <img src="img/flyer_mayo.jpg" alt="Flyer partido UNLP vs Asociación Mayo, Fecha 9" loading="lazy" />
+            <div class="galeria__overlay" aria-hidden="true">🏆</div>
+          </figure>
+        </div>
+
+        <div class="galeria__cta">
+          <a href="https://www.instagram.com/unlpbasquet/" target="_blank" rel="noopener noreferrer" class="btn btn--contorno">
+            📷 Ver más en @unlpbasquet
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ INSCRIPCIÓN ══ -->
+    <section id="inscripcion" aria-labelledby="titulo-inscripcion">
+      <div class="contenedor inscripcion__inner">
+        <div style="text-align:center;">
+          <span class="eyebrow">Sumate al Roble</span>
+          <h2 class="titulo-seccion titulo-seccion--blanco" id="titulo-inscripcion">Quiero inscribirme</h2>
+          <div class="divisor divisor--centro"></div>
+          <p style="color:rgba(255,255,255,0.65);max-width:540px;margin-inline:auto;font-size:0.95rem;">
+            Completá el formulario y nos ponemos en contacto para coordinar una prueba. Abierto a estudiantes, graduados y comunidad en general.
+          </p>
+        </div>
+
+        <div class="inscripcion__grid">
+          <aside aria-label="Información sobre el proceso de inscripción">
+            <h3 class="inscripcion__info-titulo">¿Cómo es el proceso?</h3>
+            <ol class="inscripcion__pasos" role="list">
+              <li class="paso">
+                <span class="paso__num" aria-hidden="true">1</span>
+                <p class="paso__texto">Completás el formulario con tus datos y la categoría de interés.</p>
+              </li>
+              <li class="paso">
+                <span class="paso__num" aria-hidden="true">2</span>
+                <p class="paso__texto">Nos comunicamos para coordinar un día de prueba o entrenamiento.</p>
+              </li>
+              <li class="paso">
+                <span class="paso__num" aria-hidden="true">3</span>
+                <p class="paso__texto">Te sumás al grupo y empezás a entrenar con nosotros.</p>
+              </li>
+            </ol>
+            <div class="inscripcion__requisito">
+              <h4>Requisitos generales</h4>
+              <p>Para las categorías competitivas (Sub 21 y Primera División) se requiere estar inscripto o haber egresado de la UNLP. Las categorías formativas están abiertas a toda la comunidad sin restricción de pertenencia universitaria.</p>
+            </div>
+          </aside>
+
+          <div>
+            <form id="form-inscripcion" novalidate aria-label="Formulario de inscripción">
+              <div class="form-grupo form-grupo--doble">
+                <div>
+                  <label class="form-label" for="nombre">Nombre y apellido *</label>
+                  <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Juan García" autocomplete="name" required />
+                </div>
+                <div>
+                  <label class="form-label" for="edad">Edad *</label>
+                  <input class="form-control" type="number" id="edad" name="edad" placeholder="Ej: 16" min="4" max="60" required />
+                </div>
+              </div>
+              <div class="form-grupo">
+                <label class="form-label" for="categoria">Categoría de interés *</label>
+                <select class="form-control" id="categoria" name="categoria" required>
+                  <option value="" disabled selected>Seleccioná una categoría</option>
+                  <optgroup label="Masculino">
+                    <option>Primera División (Masc.)</option>
+                    <option>Sub 21</option>
+                    <option>Juveniles</option>
+                    <option>Cadetes</option>
+                    <option>Infantiles</option>
+                    <option>Pre Infantiles</option>
+                    <option>Mini</option>
+                    <option>Pre Mini / Escuelita</option>
+                  </optgroup>
+                  <optgroup label="Femenino">
+                    <option>Primera División (Fem.)</option>
+                  </optgroup>
+                  <option value="nosey">No sé — que me orienten</option>
+                </select>
+              </div>
+              <div class="form-grupo">
+                <label class="form-label" for="contacto-dato">Teléfono o Instagram para contactarte *</label>
+                <input class="form-control" type="text" id="contacto-dato" name="contacto" placeholder="221 000-0000 o @tuusuario" required />
+              </div>
+              <div class="form-grupo">
+                <label class="form-label" for="mensaje">¿Algo más que quieras contarnos?</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" placeholder="Experiencia previa, disponibilidad, consultas..."></textarea>
+              </div>
+              <button type="submit" class="form-btn-enviar">Enviar solicitud →</button>
+            </form>
+            <div class="form-exito" id="form-exito" role="alert" aria-live="polite">
+              <p style="font-size:2rem;margin-bottom:0.5rem;">✅</p>
+              <strong>¡Tu solicitud fue enviada!</strong><br>
+              Nos comunicamos a la brevedad. Seguinos en
+              <a href="https://www.instagram.com/unlpbasquet/" target="_blank" rel="noopener">@unlpbasquet</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACTO ══ -->
+    <section id="contacto" aria-labelledby="titulo-contacto">
+      <div class="contenedor">
+        <span class="eyebrow">Dónde encontrarnos</span>
+        <h2 class="titulo-seccion" id="titulo-contacto">Contacto</h2>
+        <div class="divisor"></div>
+        <div class="contacto__grid">
+          <aside class="contacto__cards" aria-label="Información de contacto">
+            <article class="contacto-card">
+              <div class="contacto-card__icono" aria-hidden="true">📍</div>
+              <h3 class="contacto-card__titulo">Sede</h3>
+              <p class="contacto-card__texto">Campo de Deportes UNLP<br>Calle 50 y 117, La Plata<br>Buenos Aires, Argentina</p>
+            </article>
+            <article class="contacto-card">
+              <div class="contacto-card__icono" aria-hidden="true">🏀</div>
+              <h3 class="contacto-card__titulo">Entrenamientos</h3>
+              <p class="contacto-card__texto">Lunes a Viernes<br>Desde las 17:30 hs<br>(según categoría)</p>
+            </article>
+            <article class="contacto-card">
+              <div class="contacto-card__icono" aria-hidden="true">📱</div>
+              <h3 class="contacto-card__titulo">Redes sociales</h3>
+              <p class="contacto-card__texto">
+                <a href="https://www.instagram.com/unlpbasquet/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de UNLP Básquet">
+                  Instagram: @unlpbasquet
+                </a>
+              </p>
+            </article>
+          </aside>
+          <div class="mapa-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.15!2d-57.95943!3d-34.92115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e6f3cdf11111%3A0x0!2zMzTCsDU1JzE2LjEiUyA1N8KwNTcnMzMuOSJX!5e0!3m2!1ses-419!2sar!4v1234567890"
+              title="Campo de Deportes UNLP — Calle 50 y 117, La Plata"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="contenedor">
+      <div class="footer__grid">
+        <div>
+          <a href="#hero" class="footer__logo" aria-label="UNLP Básquet — inicio">
+            <img src="img/logo.png" alt="UNLP Deportes" width="160" height="40" loading="lazy" />
+          </a>
+          <p class="footer__tagline">El Roble · Básquet UNLP</p>
+          <p class="footer__descripcion">Básquet universitario público desde 1998. Primera División APDEB — masculino y femenino. Categorías formativas abiertas a toda la comunidad platense.</p>
+          <a href="https://www.instagram.com/unlpbasquet/" target="_blank" rel="noopener noreferrer" class="footer__instagram" aria-label="Seguinos en Instagram @unlpbasquet">
+            📷 @unlpbasquet
+          </a>
+        </div>
+        <nav aria-label="Navegación del pie de página">
+          <p class="footer__col-titulo">Secciones</p>
+          <ul class="footer__nav" role="list">
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#categorias">Categorías</a></li>
+            <li><a href="#competencia">Competencia</a></li>
+            <li><a href="#staff">Staff</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#inscripcion">Inscribirse</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Categorías del club">
+          <p class="footer__col-titulo">Categorías</p>
+          <ul class="footer__nav" role="list">
+            <li><a href="#categorias">Primera División</a></li>
+            <li><a href="#categorias">Sub 21</a></li>
+            <li><a href="#categorias">Juveniles · Cadetes</a></li>
+            <li><a href="#categorias">Infantiles</a></li>
+            <li><a href="#categorias">Mini · Pre Mini · Escuelita</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr class="footer__divider" />
+      <div class="footer__copy">
+        <span>© 2026 UNLP Básquet. Todos los derechos reservados.</span>
+        <span><a href="https://deportes.unlp.edu.ar" target="_blank" rel="noopener">Dirección General de Deportes · UNLP</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button id="ir-arriba" aria-label="Volver al inicio de la página">↑</button>
+
+  <script>
+    // Navbar sombra
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('con-sombra', window.scrollY > 50);
+    }, { passive: true });
+
+    // Hamburguesa
+    const hamburguesa = document.getElementById('hamburguesa');
+    const navMenu = document.getElementById('nav-menu');
+    hamburguesa.addEventListener('click', () => {
+      const abierto = navMenu.classList.toggle('abierto');
+      hamburguesa.setAttribute('aria-expanded', abierto);
+    });
+    navMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('abierto');
+        hamburguesa.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Scroll to top
+    const irArriba = document.getElementById('ir-arriba');
+    window.addEventListener('scroll', () => {
+      irArriba.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    irArriba.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Link activo en navbar
+    const secciones = document.querySelectorAll('main section[id]');
+    const linksNav = document.querySelectorAll('.navbar__link');
+    new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          linksNav.forEach(link => {
+            link.classList.remove('activo');
+            if (link.getAttribute('href') === '#' + entry.target.id) link.classList.add('activo');
+          });
+        }
+      });
+    }, { threshold: 0.3, rootMargin: '-80px 0px 0px 0px' }).observe
+      ? secciones.forEach(sec => new IntersectionObserver(entries => {
+          entries.forEach(e => {
+            if (e.isIntersecting) {
+              linksNav.forEach(l => {
+                l.classList.remove('activo');
+                if (l.getAttribute('href') === '#' + e.target.id) l.classList.add('activo');
+              });
+            }
+          });
+        }, { threshold: 0.3, rootMargin: '-80px 0px 0px 0px' }).observe(sec))
+      : null;
+
+    // Tabs de competencia
+    const tabMasc = document.getElementById('tab-masc');
+    const tabFem = document.getElementById('tab-fem');
+    const panelMasc = document.getElementById('panel-masc');
+    const panelFem = document.getElementById('panel-fem');
+
+    function activarTab(tabActivo, tabOtro, panelActivo, panelOtro) {
+      tabActivo.classList.add('comp-tab--activo');
+      tabActivo.setAttribute('aria-selected', 'true');
+      tabOtro.classList.remove('comp-tab--activo');
+      tabOtro.setAttribute('aria-selected', 'false');
+      panelActivo.removeAttribute('hidden');
+      panelOtro.setAttribute('hidden', '');
+    }
+
+    tabMasc.addEventListener('click', () => activarTab(tabMasc, tabFem, panelMasc, panelFem));
+    tabFem.addEventListener('click', () => activarTab(tabFem, tabMasc, panelFem, panelMasc));
+
+    // Formulario
+    const form = document.getElementById('form-inscripcion');
+    const exito = document.getElementById('form-exito');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      let valido = true;
+      form.querySelectorAll('[required]').forEach(campo => {
+        if (!campo.value.trim()) { campo.classList.add('error'); valido = false; }
+        else campo.classList.remove('error');
+      });
+      if (!valido) return;
+      form.style.display = 'none';
+      exito.style.display = 'block';
+    });
+    form.querySelectorAll('.form-control').forEach(c => c.addEventListener('input', () => c.classList.remove('error')));
+  </script>
+</body>
+</html>
